@@ -1,0 +1,9 @@
+import React from "react";
+function MyBooking() {
+  return (
+    <div>
+      <h1>MyBooking</h1>
+    </div>
+  );
+}
+export default MyBooking;
