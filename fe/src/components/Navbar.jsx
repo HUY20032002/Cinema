@@ -75,7 +75,7 @@ function Navbar() {
             Login
           </button>
         ) : (
-          <UserButton afterSignOutUrl="/">
+          <UserButton>
             <UserButton.MenuItems>
               <UserButton.Action
                 label="My Booking"
