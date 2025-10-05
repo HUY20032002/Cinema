@@ -1,7 +1,7 @@
 import React from "react";
 import { Star } from "lucide-react"; // sửa từ Start -> Star
 import { useNavigate } from "react-router-dom";
-
+import timeFormat from "../lib/timeFormat";
 function MovieCard({ movie }) {
   const navigate = useNavigate();
   return (
@@ -21,8 +21,8 @@ function MovieCard({ movie }) {
         {movie.genres
           .slice(0, 2)
           .map((genre) => genre.name)
-          .join(", ")}{" "}
-        | {movie.runtime} min
+          .join(", ")}
+        | {timeFormat(movie.runtime)}
       </p>
       <div className="flex items-center justify-between mt-4 pb-3">
         <button
